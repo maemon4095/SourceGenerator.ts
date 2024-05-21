@@ -2,6 +2,8 @@
 import { findTargets } from "./findTarget.ts";
 import ts from "npm:typescript";
 
+export * as util from "./util.ts";
+
 type SourceGeneratorTargetMap = {
     [ts.SyntaxKind.ClassDeclaration]: ts.ClassDeclaration;
     [ts.SyntaxKind.MethodDeclaration]: ts.MethodDeclaration;
